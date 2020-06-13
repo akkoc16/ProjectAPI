@@ -1,0 +1,15 @@
+import React from 'react'
+import {SafeAreaView, Text,View,TextInput} from 'react-native'
+import styles from '../styles'
+
+const SearchBar = (props) => {
+    return(
+        <View style={styles.search.container}>
+            <TextInput
+                onChangeText= {props.onSearch}
+                placeholder= "Şarkı arayın..."/>
+        </View>
+    )
+}
+
+export {SearchBar}
